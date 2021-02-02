@@ -1,13 +1,9 @@
-#-------------------------------------------------------------------------------
-# Name:        module1
-# Purpose:
-#
-# Author:      m_noa_000
-#
-# Created:     10/10/2019
-# Copyright:   (c) m_noa_000 2019
-# Licence:     <your licence>
-#-------------------------------------------------------------------------------
+
+
+'''This script was designed to pull in court records from Santa Clara County, 
+but it can also work for other court systems. I used this to cross reference lump 
+files of business listings or name databases to see which parties had recent court 
+cases.'''
 
 from bs4 import BeautifulSoup
 import csv
@@ -23,7 +19,7 @@ import pandas as pd
 
 wb = openpyxl.Workbook()
 
-with open('C:\\Users\\Krammy\\Downloads\\bizlisting.csv') as csvfile:
+with open('{file of search queries}') as csvfile:
     reader = csv.reader(csvfile)
 
     next(reader)
@@ -65,10 +61,6 @@ PandaMap.to_excel('wb.xlsx', index = None, header=True)
 
 print(PandaMap)
 
-#        for item in tables:
-#            if "View Case" or "No data available in table" in item:
-#                continue
-#            else:
-#                f.write(item.text)
+
 
 
