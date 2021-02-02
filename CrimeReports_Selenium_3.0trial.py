@@ -39,7 +39,7 @@ driver.maximize_window()
 toUpdateDate = 'toUpdateDate=12%2F30%2F2019'
 fromUpdateDate ='&fromUpdateDate=12%2F20%2F2019'
 
-#f = open("C:\\Users\\m_noa\\Documents\\Journalism\\crime_reports.csv", "a", newline='')
+#f = open("{path}", "a", newline='')
 #writer = csv.writer(f)
 #writer.writerow(["incidents", "time", "date", "address", "agency", "description", "coordinates"])
 
