@@ -9,6 +9,10 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
+''' This script is designed to scrape cityprotect.com, an unwieldly Crime Reports site
+used by many municipal governments across the U.S. The site is a pain to use and it 
+doesn't allow any aggregation of data. This script help gather all the report for one area.'''
+
 import pandas as pd
 import csv
 import selenium
