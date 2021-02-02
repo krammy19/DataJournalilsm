@@ -1,13 +1,4 @@
-#-------------------------------------------------------------------------------
-# Name:        module1
-# Purpose:
-#
-# Author:      m_noa
-#
-# Created:     06/01/2020
-# Copyright:   (c) m_noa 2020
-# Licence:     <your licence>
-#-------------------------------------------------------------------------------
+
 
 ''' This script is designed to scrape cityprotect.com, an unwieldly Crime Reports site
 used by many municipal governments across the U.S. The site is a pain to use and it 
