@@ -1,13 +1,8 @@
-#-------------------------------------------------------------------------------
-# Name:        module2
-# Purpose:
-#
-# Author:      m_noa_000
-#
-# Created:     15/10/2019
-# Copyright:   (c) m_noa_000 2019
-# Licence:     <your licence>
-#-------------------------------------------------------------------------------
+'''I wrote this script to grab all public notices published in an obscure newspaper
+designed to skirt public noticing laws. This helped for research for this news article: 
+https://www.mv-voice.com/news/2019/10/04/for-public-notices-mountain-view-turns-to-obscure-newspaper
+'''
+
 
 import requests
 
@@ -22,7 +17,7 @@ for x in r.json()['QUERY']['DATA']:
 
 print(ad_id)
 i = 0
-f = open("C:\\Program Files\\PyScripter\\Python practice\\pagerank\\ad_list.txt", "a+")
+f = open("{path}", "a+")
 for num in ad_id:
     ad_download = requests.get(
      "https://www.legaladstore.com/ViewAd.cfm",
